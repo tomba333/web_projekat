@@ -1,0 +1,143 @@
+
+{
+	"items": [
+			
+				{
+					"description":"12 pilećih krilaca u BBQ umaku",
+					"category": 0,
+					"name": "BBQ krilca",
+					"image_path": "Images/Rostilj/BBQ-krilca.jpg",
+					"price": "55 kn"
+				},
+				{
+					"description":"Juneći file mariniran 48h",
+					"category": 0,
+					"name": "Biftek",
+					"image_path": "Images/Rostilj/biftek.jpg",
+					"price": "90 kn"
+				},
+				{
+					"description":"10 junećih ćevapa, luk i domaća lepinja ",
+					"category": 0,
+					"name": "Ćevapi u lepinji",
+					"image_path": "Images/Rostilj/cevapi-u-lepinji.jpg",
+					"price": "50 kn"
+				},
+				{
+					"description":"0.5 kg pljeskavice, slanina, povrće",
+					"category": 0,
+					"name": "Gurmanska Pljeskavica",
+					"image_path": "Images/Rostilj/gurmanska-pljeskavica.jpg",
+					"price": "60 kn"
+				},
+				{
+					"description":"3 pileća ražnjića, tikvica, paprika, šampinjoni",
+					"category": 0,
+					"name": "Pileći Ražnjići",
+					"image_path": "Images/Rostilj/pileci-raznjici.jpg",
+					"price": "50 kn"
+				},
+				{
+					"description":"Svinjski kare punjen sirom, slaninom i kiselim krastavcima",
+					"category": 0,
+					"name": "Punjena vješalica",
+					"image_path": "Images/Rostilj/punjena_vjetalica.jpg",
+					"price": "65 kn"
+				},
+
+				{
+					
+					"description":"Piletina, paprika, crveni luk, origano, rajčica, mozzarella",
+					"category": 1,
+					"name": "Calzone",
+					"image_path": "Images/Pizza/calzone.jpg",
+					"price": "40 kn"
+				},
+				{
+					"description":"Umak od rajčice, mozzarella",
+					"category": 1,
+					"name": "Margarita",
+					"image_path": "Images/Pizza/margarita.jpg",
+					"price": "35 kn"
+				},
+				{
+					"description":"Šunka, gljive, crne masline, grana padano, mozzarella",
+					"category": 1,
+					"name": "Capricciosa",
+					"image_path": "Images/Pizza/capricosa.jpg",
+					"price": "40 kn"
+				},
+				{
+					"description":"Umak od rajčice, sir, šunka, ananas",
+					"category": 1,
+					"name": "Hawaii",
+					"image_path": "Images/Pizza/hawaii.jpg",
+					"price": "45 kn"
+				},
+				{
+					"description":"Cheddar sir, pljesnivi sir, grana padano, mozzarella",
+					"category": 1,
+					"name": "Quatro formaggio",
+					"image_path": "Images/Pizza/quatro_formagi.jpg",
+					"price": "50 kn"
+				},
+				{
+					"description":"Slanina, ljuta pepperoni salama, paprika, jalapeño papričica, mozzarella",
+					"category": 1,
+					"name": "Slavonska",
+					"image_path": "Images/Pizza/slavonska.jpg",
+					"price": "50 kn"
+				},
+		
+				{
+					"description":"Cannelloni sa umakom od rajčiće, šampinjonima, mozzarelom i špinatom",
+					"category": 2,
+					"name": "Punjeni Cannelloni",
+					"image_path": "Images/Tjestenina/punjeni-caneloni.jpg",
+					"price": "60 kn"
+				},
+				{
+					"description":"Pileći file u curry umaku",
+					"category": 2,
+					"name": "Curry piletina",
+					"image_path": "Images/Tjestenina/curry_piletina.jpg",
+					"price": "55 kn"
+				},
+				{
+					"description":"Mljevena junetina, bechamel",
+					"category": 2,
+					"name": "Lazanje",
+					"image_path": "Images/Tjestenina/lazanje.jpg",
+					"price": "50 kn"
+				},
+				{
+					"description":"Miješano mljeveno meso, domaća tjestenina, bolognese umak",
+					"category": 2,
+					"name": "Spaghetti bolognese",
+					"image_path": "Images/Tjestenina/spaghetti-bolognese.jpg",
+					"price": "50 kn"
+				},
+				{
+					"description":"Domaća tjestenina, parmezan, slanina",
+					"category": 2,
+					"name": "Spaghetti carbonara",
+					"image_path": "Images/Tjestenina/spaghetti-carbonara.jpg",
+					"price": "50 kn"
+				},
+				{
+					"description":"Pileći file narezan na kockice s prženim povrćem",
+					"category": 2,
+					"name": "Wok piletina",
+					"image_path": "Images/Tjestenina/wok-piletina.jpg",
+					"price": "50 kn"
+				}
+		],
+		"kategorije":[
+			"roštilj",
+			"pizza",
+			"tjestenina"
+		]
+	
+	
+
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Koliba</title>
+</head>
+<body>
+    <script >
+      
+          /* var img = new Image();
+           img.src = "./hamburger.png";
+           document.getElementById('show').appendChild(img);
+           */
+
+           $(document).ready(function () {
+                $(".BBQFood").click(function () {
+                    if ($(this).parent(".roštilj-container").children(".image").length) {
+                        $(this).parent(".roštilj-container").children(".image").toggle();  
+                    } else {
+                        var image_name='hamburger.png';
+                        var imageTag='<div class="image">'+'<img src="./'+image_name+'" alt="image" height="100" />'+'</div>';
+                        $(this).parent('.roštilj-container').append(imageTag);
+                    }
+                    });
+
+
+                $(".pizzaFood").click(function () {
+                    if ($(this).parent(".pizza-container").children(".image").length) {
+                        $(this).parent(".pizza-container").children(".image").toggle();
+                    } else {
+                        var image_name='pizza.png';
+                        var imageTag='<div class="image">'+'<img src="./'+image_name+'" alt="image" height="100" />'+'</div>';
+                        $(this).parent('.pizza-container').append(imageTag);
+                    }
+                    });
+
+                $(".table").click(function (){
+                        $(".content").show();
+                        $(".content").children(".table-name").text($(this).attr('alt'));
+                    
+                })
+                $(".close-btn").click(function(){
+                    $(".content").toggle();
+                })
+            });
+            
+               
+
+  
+
+    </script>
+    
+    <!--Navbar-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <p class="navbar-brand" href="#">Restoran Koliba</p>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#opis">O nama</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cijenik">Cijenik</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rezervacija">Rezervacija</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <header class="header">
+            <img src="./entry_img.jpg" class="img-fluid" alt="Restoran" id="entry_img">  
+        </header>
+        <span id="content-divider"></span>
+       <!--Sadržaj web apk-->
+     <div class="content-container">
+        <!--O nama-->
+        <div class="about-container" id="opis">
+            <h1>O nama</h1>
+            <span id="content-divider"></span>
+            <div class="map-container">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe id="map" class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.290082728729!2d21.944377915804484!3d42.993226002872056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47558319b251a41d%3A0x74a841e229ce3609!2zxIxpxI1pbmEga29saWJh!5e0!3m2!1shr!2shr!4v1651000696146!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="text-container">
+                    <p>Otvoren 27. travnja 2022. godine, već dugi niz godina ima uspjesno poslovanje u slavoniji i baranji posebno u baranji.</p>
+                </div>
+            </div>  
+        </div>
+        <span id="content-divider"></span>
+        <!--Cijenik-->
+        <div class= "cijenik-container" id="cijenik">
+            <h1>Cijenik</h1>
+            <span id="content-divider"></span>
+            <div class="vrste-container">
+                <div class="predjela-container">
+                    <h2>Predjela</h2>
+                </div>
+                <div class="roštilj-container" id="show">
+                    <h2 class="BBQFood">Jela s roštilja</h2>
+                </div>
+                <div class="pizza-container">
+                    <h2 class="pizzaFood" >Pizze</h2>
+                </div>
+                <div class="tjestenina-container">
+                    <h2>Tjestenine</h2>
+                </div>
+                <div class="pića-container">
+                    <h2>Pića</h2>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <span id="content-divider"></span>
+    <!--Reservacije-->
+    <div class="rezervacija-container" id="rezervacija">
+        <h1>Rezervacija</h1>
+        <span id="content-divider"></span>
+        <img src="restaurant-plan.png" alt="Sjedala" usemap="#rezervacija">
+
+        <map name="rezervacija">
+          <area class="table" shape="circle" coords="92,72,24" alt="SepareLijevi1" href="#content">
+          <area class="table" shape="circle" coords="202,72,24" alt="SepareLijevi2" href="#content">
+          <area class="table" shape="circle" coords="430,72,24" alt="SepareDesni1" href="#content">
+          <area class="table" shape="circle" coords="552,72,24" alt="SepareDesni2" href="#content">
+          <area class="table" shape="circle" coords="74,184,22" alt="Obiteljski1" href="#content">
+          <area class="table" shape="circle" coords="74,250,22" alt="Obiteljski2" href="#content">
+          <area class="table" shape="circle" coords="74,314,22" alt="Obiteljski3" href="#content">
+          <area class="table" shape="circle" coords="208,170,20" alt="Okrugli4Lijevo1" href="#content">
+          <area class="table" shape="circle" coords="208,228,20" alt="Okrugli4Lijevo2" href="#content">
+          <area class="table" shape="circle" coords="208,296,20" alt="Okrugli4Lijevo3" href="#content">
+          <area class="table" shape="circle" coords="266,170,20" alt="Okrugli4Lijevo4" href="#content">
+          <area class="table" shape="circle" coords="266,228,20" alt="Okrugli4Lijevo5" href="#content">
+          <area class="table" shape="circle" coords="266,296,20" alt="Okrugli4Lijevo6" href="#content">
+          <area class="table" shape="circle" coords="388,170,20" alt="Okrugli4Desni1" href="#content">
+          <area class="table" shape="circle" coords="388,228,20" alt="Okrugli4Desni2" href="#content">
+          <area class="table" shape="circle" coords="388,296,20" alt="Okrugli4Desni3" href="#content">
+          <area class="table" shape="circle" coords="446,170,20" alt="Okrugli4Desni4" href="#content">
+          <area class="table" shape="circle" coords="446,228,20" alt="Okrugli4Desni5" href="#content">
+          <area class="table" shape="circle" coords="446,296,20" alt="Okrugli4Desni6" href="#content">
+          <area class="table" shape="circle" coords="559,171,10" alt="Okrugli2Desni1" href="#content">
+          <area class="table" shape="circle" coords="559,215,10" alt="Okrugli2Desni2" href="#content">
+          <area class="table" shape="circle" coords="559,257,10" alt="Okrugli2Desni3" href="#content">
+          <area class="table" shape="circle" coords="559,301,10" alt="Okrugli2Desni4" href="#content">
+        </map> 
+        <!--POPUP-->
+        <div class="content">
+            <div class="close-btn">
+                ×
+            </div>
+            <h3 class="table-name"></h3>
+      
+                <form>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div> 
+                    <div class="row">
+                      <div class="col">
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                      <div class="col">
+                        <input type="date" class="form-control" placeholder="Datum">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Broj gostiju">
+                      </div>
+                    </div>
+                      
+                    
+                  </form>
+        </div>
+        
+    </div>
+</body>
+
+</html>
